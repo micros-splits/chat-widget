@@ -1,18 +1,18 @@
+import { chatWidgetTemplate } from "./chat-widget.template";
 
-import html from 'chat-widget.html'
 
 
 
 export class ChatWidget {
 
-    doc:Document=Document.parseHTMLUnsafe(html);
+    doc:Document;
     chatContainer:HTMLElement;
     sendButton:HTMLButtonElement;
     messagesList:HTMLDivElement;
 
     init(){
         const parser = new DOMParser();
-        this.doc = parser.parseFromString(html, 'text/html');
+        this.doc = parser.parseFromString(chatWidgetTemplate, 'text/html');
 
         //this.doc=Document.parseHTMLUnsafe(html);
         this.sendButton=this.doc.getElementById("chat-send") as any;

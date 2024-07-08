@@ -1,4 +1,5 @@
-<div class="chat-container">
+export var chatWidgetTemplate=`
+<div id="chat-container" class="chat-container">
 
 	<style>
 		.chat-container {
@@ -62,7 +63,7 @@
 	</style>
 
 
-	<div class="chat-messages">
+	<div id="chat-messages" class="chat-messages">
 
 		<Div class="message-line">
 			<div class="message-body">hello </div>
@@ -80,3 +81,4 @@
 		<button id="chat-send" class="chat-send">></button>
 	</div>
 </div>
+`;
