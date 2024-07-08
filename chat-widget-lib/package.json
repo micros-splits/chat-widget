@@ -1,0 +1,14 @@
+{
+  "name": "msplits-chat-widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test1": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Connamix-Manar",
+  "license": "MIT",
+  "devDependencies": {
+    "raw-loader": "^4.0.2"
+  }
+}
